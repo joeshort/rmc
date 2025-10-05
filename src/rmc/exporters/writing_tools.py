@@ -45,7 +45,7 @@ def clamp(value):
 class Pen:
     def __init__(self, name, base_width, base_color_id):
         self.base_width = base_width
-        self.base_color = RM_PALETTE[base_color_id]
+        self.base_color = RM_PALETTE.get(base_color_id, RM_PALETTE[PenColor.BLACK])
         self.name = name
         self.segment_length = 1000
         self.base_opacity = 1
