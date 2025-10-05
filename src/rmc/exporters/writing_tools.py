@@ -51,6 +51,7 @@ class Pen:
         self.base_opacity = 1
         # initial stroke values
         self.stroke_linecap = "round"
+        self.stroke_linejoin = "round"
         self.stroke_opacity = 1
         self.stroke_width = base_width
         self.stroke_color = base_color_id

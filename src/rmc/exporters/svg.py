@@ -232,6 +232,7 @@ def draw_stroke(item: si.Line, output):
             output.write(f'style="fill:none; stroke:{segment_color}; '
                          f'stroke-width:{scale(segment_width):.3f}; opacity:{segment_opacity}" ')
             output.write(f'stroke-linecap="{pen.stroke_linecap}" ')
+            output.write(f'stroke-linejoin="{pen.stroke_linejoin}" ')
             output.write('points="')
             if last_xpos != -1.:
                 # Join to previous segment
